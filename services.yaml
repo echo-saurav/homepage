@@ -1,0 +1,273 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/services
+
+- Media statistic: 
+    - Jellyfin:
+        href: http://movie.home/movie
+        description: Watch movie/tv-series!
+        icon: jellyfin
+        server: my-docker
+        container: jellyfin
+        widget:
+            type: jellyfin
+            url: http://jellyfin:8096/movie
+            key: {{HOMEPAGE_VAR_JELLY}}
+            enableBlocks: true # optional, defaults to false
+            enableNowPlaying: true # optional, defaults to true        
+    
+
+    - Navidrome:
+        href: http://navidrome.home/
+        description: Songs & music
+        icon: https://github.com/navidrome/navidrome/raw/master/resources/logo-192x192.png
+        server: my-docker
+        container: navidrome
+        widget:
+            type: navidrome
+            url: http://navidrome:4533/navmusic
+            user: saurav
+            token: {{HOMEPAGE_VAR_NAVI}} #md5(password + salt)
+            salt: randomsalt
+
+    - Transmission:
+        href: http://transmission.home
+        description: Torrent download client
+        icon: https://raw.githubusercontent.com/6c65726f79/Transmissionic/main/public/assets/icon/favicon.png
+        widget:
+            type: transmission
+            url: http://transmission:9091
+            # username: username
+            # password: password                      
+
+- Network statistic:             
+    - Uptime Kuma:
+        href: http://uptime.home
+        description: track uptime of service
+        icon: uptime-kuma
+        widget:
+            # field: ["up", "down", "uptime", "incident"].
+            type: uptimekuma
+            url: http://uptimekuma:3001
+            slug: public
+
+    - Speed tracker:
+        href: http://speed.home/
+        description: Internet speed log
+        server: my-docker
+        container: speedtest-tracker
+        widget:
+            type: speedtest
+            url: http://speedtest-tracker
+
+    - Watchtower:
+        description: Update container
+        icon: watchtower
+        server: my-docker
+        container: watchtower
+        widget:
+            type: watchtower
+            url: http://watchtower:8080
+            key: {{HOMEPAGE_VAR_WATCH}}
+
+    - Traefik:
+        href: http://192.168.0.120:8080
+        description: Traefik admin
+        icon: traefik
+        widget:
+            type: traefik
+            url: http://traefik:8080
+
+            # username: username # optional
+            # password: password # optional
+
+- Development:
+    - Bookmarks:
+        href: http://bookmarks.home/
+        description: My bookmarks
+        icon: nginx
+        server: my-docker
+        container: bookmarks
+
+    - Nginx:
+        href: http://nginx.home/    
+        description: nginx
+        icon: nginx
+        server: my-docker
+        container: nginx
+
+    - Nocodb:
+        href: http://nocodb.home/    
+        description: No code Database
+        icon: nocodb
+        server: my-docker
+        container: nocodb       
+
+    - Flame:
+        href: http://public.home
+        description: public homepage
+        icon: flame
+        server: my-docker
+        container: flame
+
+- Media:
+    - Jellyfin:
+        href: http://movie.home/movie
+        description: Watch movie/tv-series!
+        icon: jellyfin
+        server: my-docker
+        container: jellyfin
+
+
+    - Radarr:
+        href: http://radarr.home/radarr
+        description: add movies
+        icon: radarr
+        server: my-docker
+        container: radarr
+
+
+    - Sonarr:
+        href: http://sonarr.home/sonarr
+        description: add tv-series
+        icon: sonarr
+        server: my-docker
+        container: sonarr
+
+    - Prowlarr:
+        href: http://prowlarr.home/
+        description: prowlarr
+        icon: prowlarr
+        server: my-docker
+        container: prowlarr
+
+
+    - Transmission:
+        href: http://transmission.home/
+        description: Torrent downloads
+        icon: transmission
+        server: my-docker
+        container: transmission
+
+    - Requesterr:
+        href: http://requestrr.home/
+        description: Requestrr discord server
+        icon: requestrr
+        server: my-docker
+        container: requestrr        
+
+    - Jellyseerr:
+        href: http://jellyseerr.home/
+        description: Jellyseerr
+        icon: jellyseerr
+        server: my-docker
+        container: jellyseerr
+
+
+- Productivity:
+    - ChangeDetection:
+        href: http://change.home/
+        description: Change Detection
+        server: my-docker
+        container: changedetection
+
+
+    - Filebrowser:
+        href: http://file.home/filebrowser
+        description: Store files
+        icon: files
+        server: my-docker
+        container: filebrowser
+        # showStats: true
+
+    - Pairdrop:
+        href: {{HOMEPAGE_VAR_PAIRDROP}}
+        description: Share files and text
+        icon: https://raw.githubusercontent.com/schlagmichdoch/PairDrop/master/public/images/android-chrome-512x512.png
+        server: my-docker
+        container: pairdrop
+
+    - Homeserver Syncthing:
+        href: http://192.168.0.120:8384
+        description: Homeserver syncthing
+        icon: syncthing
+
+    - Macbook Syncthing:
+        href: http://127.0.0.1:8384
+        description: Macbook syncthing
+        icon: syncthing
+
+    - Chrome:
+        href: http://192.168.0.120:7777
+        description: Remote chromium
+        icon: chrome
+        server: my-docker
+        container: neko-chromium
+
+
+    - Home Assistance:
+        href: http://192.168.0.120:8123
+        description: Home automation and stuff
+        icon: home-assistant
+        ping: http://192.168.0.120:8123
+        # server: my-docker
+        # container: homeassistant
+
+
+- Network & Security:
+    - Uptime Kuma:
+        href: http://uptime.home
+        description: track uptime of service
+        icon: uptime-kuma
+        server: my-docker
+        container: uptimekuma
+
+    - WireGuard:
+        href: http://wireguard.home/
+        description: VPN
+        icon: wireguard
+        server: my-docker
+        container: wg-easy
+    - Netdata:
+        href: http://192.168.0.120:19999/
+        description: Monitoring server
+        icon: netdata
+        ping: http://192.168.0.120:19999/
+
+    - PiHole:
+        href: http://pi.home/admin
+        description: PiHole for DNS and adBlock
+        icon: pi-hole
+        server: my-docker
+        container: pihole
+
+    - Openspeed:
+        href: http://speedtest.home/speed
+        description: Speedtest from client to server
+        icon: https://raw.githubusercontent.com/openspeedtest/Speed-Test/main/assets/images/icons/favicon.ico                
+        server: my-docker
+        container: openspeed
+
+
+    - Traefik:
+        href: http://192.168.0.120:8080
+        description: Traefik admin
+        icon: traefik
+        # ping: http://192.168.0.120:8080
+        server: my-docker
+        container: traefik
+
+    - Dozzle:
+        href: http://dozzle.home
+        description: Docker container logs
+        icon: dozzle
+        server: my-docker
+        container: dozzle
+
+    - yacht:
+        href: http://yacht.home
+        description: Yacht
+        icon: yacht
+        server: my-docker
+        container: yacht
+

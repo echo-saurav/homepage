@@ -1,0 +1,41 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+title: Saurav | Homeserver dashboard
+target: _self # Possible options include _blank, _self, and _top
+
+# providers:
+#   openweathermap: openweathermapapikey
+#   weatherapi: weatherapiapikey
+
+background: 
+  image: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
+  # https://tailwindcss.com/docs/
+  #blur: sm # sm, "", md, xl
+  saturate: 50 
+  brightness: 50 
+  opacity: 50 
+
+quicklaunch:
+    searchDescriptions: true
+    hideInternetSearch: false
+    hideVisitURL: false
+
+
+layout:
+  Media statistic:
+    style: row
+    columns: 4
+  Network & Monitoring:
+    style: row
+    columns: 4    
+  Media:
+    style: columns
+  Utilities:
+    style: columns
+  Network & Docker:
+    style: columns
+  Development:
+    style: columns
+
+  

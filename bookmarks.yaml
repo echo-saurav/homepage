@@ -1,0 +1,87 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/bookmarks
+
+- Configs:
+  - Docker compose:
+    - icon: vscode
+      href: http://192.168.0.120:8444/?folder=/home/saurav/docker/dockerCompose
+                        
+  - Homepage config:
+    - icon: vscode
+      href: http://192.168.0.120:8444/?folder=/home/saurav/docker/dockerCompose/homepage/
+
+  - Nginx page:
+    - icon: vscode
+      href: http://192.168.0.120:8444/?folder=/home/saurav/storage/public/nginx/html/readme
+
+  - Homepage docs:
+    - icon: google-docs
+      href: https://gethomepage.dev/
+
+  - Homepage icons:
+    - icon: github
+      href: https://github.com/walkxcode/dashboard-icons/tree/main/svg
+
+  - Syncthing macbook:
+    - icon: syncthing
+      href: http://127.0.0.1:8384    
+
+
+
+- Dev links:
+    - Github:
+      - abbr: GH
+        icon: github
+        href: https://github.com/
+    - Map:
+      - abbr: MP
+        icon: google-maps
+        href: https://www.google.com/maps/
+    - Scientist:
+      - abbr: SC
+        icon: gmail
+        href: https://mail.google.com/mail/u/0/
+    - Echo:
+      - abbr: EC
+        icon: gmail
+        href: https://mail.google.com/mail/u/1/
+    - Wifi:
+      - abbr: WF
+        icon: google-wifi
+        href: http://192.168.0.1/
+    - ChatGpt:
+      - abbr: CH
+        href: http://chat.openai.com/chat        
+        icon: chatgpt
+
+- Other sites:
+    - Reddit:
+      - abbr: RE
+        icon: reddit
+        href: https://reddit.com/
+    - Facebook:
+      - abbr: FB
+        icon: facebook
+        href: https://facebook.com/
+    - Instagram:
+      - abbr: IN
+        icon: instagram
+        href: https://instagram.com/
+    - Twitter:
+      - abbr: TW∫
+        icon: twitter
+        href: https://twitter.com/
+    - Discord:
+      - abbr: DS
+        icon: discord
+        href: https://discord.com/
+    - YouTube:
+      - abbr: YT
+        icon: youtube
+        href: https://youtube.com/        
+
+
+
+
+

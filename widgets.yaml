@@ -1,16 +1,14 @@
 ---
 # For configuration options and examples, please see:
-# https://gethomepage.dev/en/configs/widgets
-
-
-- search:
-    provider: google
-    target: _blank
+# https://gethomepage.dev/latest/configs/service-widgets
 
 - resources:
     cpu: true
     memory: true
     disk: /
-    cputemp: true
-    uptime: true
+
+- search:
+    provider: google
+    target: _blank
+
 

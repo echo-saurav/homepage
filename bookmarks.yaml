@@ -1,20 +1,26 @@
 ---
 # For configuration options and examples, please see:
-# https://gethomepage.dev/en/configs/bookmarks
+# https://gethomepage.dev/latest/configs/bookmarks
 
-- Configs:
+
+- Local Configs:
   - Docker compose:
     - icon: vscode
       href: http://192.168.0.120:8444/?folder=/home/saurav/docker/dockerCompose
                         
   - Homepage config:
     - icon: vscode
-      href: http://192.168.0.120:8444/?folder=/home/saurav/docker/dockerCompose/homepage/
+      href: http://192.168.0.120:8444/?folder=/home/saurav/docker/dockerCompose/homepage/publicConfig/
 
-  - Nginx page:
+  - Nginx Doc page:
     - icon: vscode
-      href: http://192.168.0.120:8444/?folder=/home/saurav/storage/public/nginx/html/readme
+      href: http://192.168.0.120:8444/?folder=/home/saurav/docker/dockerCompose/nginx-docs/docs/
 
+  - Nginx fun page:
+    - icon: vscode
+      href: http://192.168.0.120:8444/?folder=/home/saurav/docker/dockerCompose/nginx-fun/docs/
+
+- Useful Doc sites:
   - Homepage docs:
     - icon: google-docs
       href: https://gethomepage.dev/
@@ -23,37 +29,33 @@
     - icon: github
       href: https://github.com/walkxcode/dashboard-icons/tree/main/svg
 
-  - Syncthing macbook:
-    - icon: syncthing
-      href: http://127.0.0.1:8384    
 
 
-
-- Dev links:
-    - Github:
-      - abbr: GH
-        icon: github
-        href: https://github.com/
-    - Map:
-      - abbr: MP
-        icon: google-maps
-        href: https://www.google.com/maps/
-    - Scientist:
-      - abbr: SC
-        icon: gmail
-        href: https://mail.google.com/mail/u/0/
-    - Echo:
-      - abbr: EC
-        icon: gmail
-        href: https://mail.google.com/mail/u/1/
-    - Wifi:
-      - abbr: WF
-        icon: google-wifi
-        href: http://192.168.0.1/
-    - ChatGpt:
-      - abbr: CH
-        href: http://chat.openai.com/chat        
-        icon: chatgpt
+# - Dev links:
+#     - Github:
+#       - abbr: GH
+#         icon: github
+#         href: https://github.com/
+#     - Map:
+#       - abbr: MP
+#         icon: google-maps
+#         href: https://www.google.com/maps/
+#     - Scientist:
+#       - abbr: SC
+#         icon: gmail
+#         href: https://mail.google.com/mail/u/0/
+#     - Echo:
+#       - abbr: EC
+#         icon: gmail
+#         href: https://mail.google.com/mail/u/1/
+#     - Wifi:
+#       - abbr: WF
+#         icon: google-wifi
+#         href: http://192.168.0.1/
+#     - ChatGpt:
+#       - abbr: CH
+#         href: http://chat.openai.com/chat        
+#         icon: chatgpt
 
 - Other sites:
     - Reddit:
@@ -69,7 +71,7 @@
         icon: instagram
         href: https://instagram.com/
     - Twitter:
-      - abbr: TW∫
+      - abbr: TW
         icon: twitter
         href: https://twitter.com/
     - Discord:
@@ -80,6 +82,7 @@
       - abbr: YT
         icon: youtube
         href: https://youtube.com/        
+
 
 
 
